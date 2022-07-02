@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 100vh;
+    background: url() no-repeat center top/cover;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41,41,41,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_form{
+    width: 600px;
+    margin: auto 20px;
+}
+.form{
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: none;
+}
+.form_title{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.form_item{
+    padding-bottom: 20px;
+}
+.form_label{
+    font-weight: bold;
+    padding-bottom: 5px;
+    display: block;
+    color: #1cc8cd;
+
+}
+.form_input-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid;
+}
+.form_input-img{
+    width: 30px;
+}
+.form_input{
+    border:none;
+    outline: none;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+}
+.form_button-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form_button{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 10px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: #03bdc2;
+    transition: background-color 0.4s;
+}
+.form_button:hover{
+    background-color: #00d2d7;
+
+}
+.form_link-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form_link-title{
+    padding-right: 10px;
+    font-weight: bold;
+}
+.form_link{
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ea740e;
+    transition: color 0.4s;
+}
+.form_link:hover{
+    color: #ff9335;
+}
+#radio-login:checked ~ .header_form-item #login-form{
+    display: block;
+}
+#radio-registration:checked ~ .header_form-item #registration-form{
+    display: block;
+}
+.form_input-radio{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}

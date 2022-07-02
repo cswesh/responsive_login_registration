@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Login and Registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header_forms">
+                <input type="radio" checked id="radio-login" name="form" class="form_input-radio">
+                <input type="radio" id="radio-registration" name="form" class="form_input-radio">
+                <div class="header_form-item">
+                    <form action="" method="POST" class="form" id="login-form">
+                        <h1 class="form_title">Login</h1>
+                        <div class="form_item">
+                            <label for="input-login" class="form_label">
+                                Login:
+                            </label>
+                            <div class="form_input-box">
+                                <img src="profile.png" class="form_input-img" alt="">
+                                <input type="text" placeholder="Username" id="input-login" class="form_input">
+                            </div>
+                        </div>
+                        <div class="form_item">
+                            <label for="input-password" class="form_label">
+                                Password:
+                            </label>
+                            <div class="form_input-box">
+                                <img src="password.png" class="form_input-img" alt="">
+                                <input type="password" placeholder="Password" id="input-password" class="form_input">
+                            </div>
+                        </div>
+
+                        <div class="form_item">
+                            <div class="form_button-box">
+                                <button form="login-form" type="submit" class="form_button">
+                                    Login
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form_item">
+                            <div class="form_link-box">
+                                <p class="form_link-title">Not registered?</p>
+                                <label for="radio-registration" class="form_link">Sign Up</label>
+                            </div>
+                        </div>
+                    </form>
+
+                    <form action="" method="POST" class="form" id="registration-form">
+                        <h1 class="form_title">Registration</h1>
+                        <div class="form_item">
+                            <label for="input-registration-login" class="form_label">
+                                Registration:
+                            </label>
+                            <div class="form_input-box">
+                                <img src="profile.png" class="form_input-img" alt="">
+                                <input type="text" placeholder="Username" id="input-registration-login" class="form_input">
+                            </div>
+                        </div>
+                        <div class="form_item">
+                            <label for="input-email" class="form_label">
+                                Email:
+                            </label>
+                            <div class="form_input-box">
+                                <img src="email.png" class="form_input-img" alt="">
+                                <input type="email" placeholder="Email" id="input-email" class="form_input">
+                            </div>
+                        </div>
+                        <div class="form_item">
+                            <label for="input-registration-password" class="form_label">
+                                Password:
+                            </label>
+                            <div class="form_input-box">
+                                <img src="password.png" class="form_input-img" alt="">
+                                <input type="password" placeholder="Password" id="input-registration-password" class="form_input">
+                            </div>
+                        </div>
+                        <div class="form_item">
+                            <label for="input-rep-password" class="form_label">
+                                Confirm Password:
+                            </label>
+                            <div class="form_input-box">
+                                <img src="password.png" class="form_input-img" alt="">
+                                <input type="password" placeholder="Confirm Password" id="input-rep-password" class="form_input">
+                            </div>
+                        </div>
+
+                        <div class="form_item">
+                            <div class="form_button-box">
+                                <button form="registration-form" type="submit" class="form_button">
+                                    Sign Up
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form_item">
+                            <div class="form_link-box">
+                                <p class="form_link-title">Have account?</p>
+                                <label for="radio-login" class="form_link">Login</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
